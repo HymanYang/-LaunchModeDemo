@@ -20,7 +20,8 @@ public class D_Activity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(D_Activity.this.getApplicationContext(), C_Activity.class);
+                Intent intent = new Intent(D_Activity.this.getApplicationContext(),
+                        C_Activity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 D_Activity.this.getApplicationContext().startActivity(intent);
             }

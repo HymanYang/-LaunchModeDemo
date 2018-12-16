@@ -26,7 +26,7 @@ public class B_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //finish指定在启下一个页面之前,导致 后续的问题
+                //finish指定在启下一个页面之前,故 摧毁了当前栈，新创建了另一个栈, 导致了 后续的问题
 
                 B_Activity.this.finish();
 
